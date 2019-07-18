@@ -14,7 +14,8 @@ contract Voting {
   /* 这就是把合约部署到区块链上时会执行一次的构造器。
   在部署合约时，我们会传入一个包含候选项的数组。
   */
-  function Voting(bytes32[] candidateNames) public {
+  // function Voting(bytes32[] candidateNames) public {
+  constructor (bytes32[] memory candidateNames) public { 
     candidateList = candidateNames;
   }
   // 这个函数用于返回指定候选项的总票数，其参数即为指定候选项

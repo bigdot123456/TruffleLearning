@@ -2,7 +2,7 @@
   "contractName": "Test",
   "abi": [
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
           "name": "a",
@@ -17,16 +17,16 @@
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "pure",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"a\",\"type\":\"uint256\"}],\"name\":\"multiply\",\"outputs\":[{\"name\":\"d\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/liqinghua/truffle/demo1/contracts/1.sol\":\"Test\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/liqinghua/truffle/demo1/contracts/1.sol\":{\"keccak256\":\"0xd353442b5325241fef8354c899ecf0416e9db84b9afaeffb7ca7a3d79a878059\",\"urls\":[\"bzzr://645b70f29f1bcf04303627716506687bedd33e3dcbe8b2e916baafba7cc55456\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060a58061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c6888fa114602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b600060078202905091905056fea165627a7a723058200d00a39302ffd397ff7879381f67c1bdd2191f2df8658efd8e23d18f24a4b5830029",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c6888fa114602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b600060078202905091905056fea165627a7a723058200d00a39302ffd397ff7879381f67c1bdd2191f2df8658efd8e23d18f24a4b5830029",
-  "sourceMap": "59:100:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:100:0;;;;;;;",
-  "deployedSourceMap": "59:100:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:100:0;;;;;;;;;;;;;;;;;;;79:78;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;79:78:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;120:6;149:1;145;:5;138:12;;79:78;;;:::o",
-  "source": "//pragma solidity ^0.4.4;\npragma solidity >=0.4.21 <0.6.0;\ncontract Test {\n    function multiply(uint a )public returns(uint d) {\n        return a * 7;\n    }\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"a\",\"type\":\"uint256\"}],\"name\":\"multiply\",\"outputs\":[{\"name\":\"d\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/liqinghua/truffle/demo1/contracts/1.sol\":\"Test\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/liqinghua/truffle/demo1/contracts/1.sol\":{\"keccak256\":\"0x5cb7ea18a446d91751bdb9eac0df74b86046c0fd9bc7ab19dfde84cc0b2520a0\",\"urls\":[\"bzzr://d6cc71de20e33202459f65d5bf72dd9c73e6297660c6666081e747182e0d685c\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060a58061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c6888fa114602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b600060078202905091905056fea165627a7a72305820dc3124430177b60570db799cc5620e98f1f9d6a68ce1c97d0a5c0194e7bf38390029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c6888fa114602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b600060078202905091905056fea165627a7a72305820dc3124430177b60570db799cc5620e98f1f9d6a68ce1c97d0a5c0194e7bf38390029",
+  "sourceMap": "59:105:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:105:0;;;;;;;",
+  "deployedSourceMap": "59:105:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:105:0;;;;;;;;;;;;;;;;;;;79:83;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;79:83:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;125:6;154:1;150;:5;143:12;;79:83;;;:::o",
+  "source": "//pragma solidity ^0.4.4;\npragma solidity >=0.4.21 <0.6.0;\ncontract Test {\n    function multiply(uint a )public pure returns(uint d) {\n        return a * 7;\n    }\n}\n",
   "sourcePath": "/Users/liqinghua/truffle/demo1/contracts/1.sol",
   "ast": {
     "absolutePath": "/Users/liqinghua/truffle/demo1/contracts/1.sol",
@@ -69,7 +69,7 @@
             "body": {
               "id": 12,
               "nodeType": "Block",
-              "src": "128:29:0",
+              "src": "133:29:0",
               "statements": [
                 {
                   "expression": {
@@ -90,7 +90,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "145:1:0",
+                      "src": "150:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -108,7 +108,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "149:1:0",
+                      "src": "154:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_7_by_1",
@@ -116,7 +116,7 @@
                       },
                       "value": "7"
                     },
-                    "src": "145:5:0",
+                    "src": "150:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -125,7 +125,7 @@
                   "functionReturnParameters": 7,
                   "id": 11,
                   "nodeType": "Return",
-                  "src": "138:12:0"
+                  "src": "143:12:0"
                 }
               ]
             },
@@ -179,7 +179,7 @@
                   "name": "d",
                   "nodeType": "VariableDeclaration",
                   "scope": 13,
-                  "src": "120:6:0",
+                  "src": "125:6:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -190,7 +190,7 @@
                     "id": 5,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:4:0",
+                    "src": "125:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -200,20 +200,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:8:0"
+              "src": "124:8:0"
             },
             "scope": 14,
-            "src": "79:78:0",
-            "stateMutability": "nonpayable",
+            "src": "79:83:0",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 15,
-        "src": "59:100:0"
+        "src": "59:105:0"
       }
     ],
-    "src": "26:134:0"
+    "src": "26:139:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/liqinghua/truffle/demo1/contracts/1.sol",
@@ -256,7 +256,7 @@
             "body": {
               "id": 12,
               "nodeType": "Block",
-              "src": "128:29:0",
+              "src": "133:29:0",
               "statements": [
                 {
                   "expression": {
@@ -277,7 +277,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "145:1:0",
+                      "src": "150:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -295,7 +295,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "149:1:0",
+                      "src": "154:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_7_by_1",
@@ -303,7 +303,7 @@
                       },
                       "value": "7"
                     },
-                    "src": "145:5:0",
+                    "src": "150:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -312,7 +312,7 @@
                   "functionReturnParameters": 7,
                   "id": 11,
                   "nodeType": "Return",
-                  "src": "138:12:0"
+                  "src": "143:12:0"
                 }
               ]
             },
@@ -366,7 +366,7 @@
                   "name": "d",
                   "nodeType": "VariableDeclaration",
                   "scope": 13,
-                  "src": "120:6:0",
+                  "src": "125:6:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -377,7 +377,7 @@
                     "id": 5,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:4:0",
+                    "src": "125:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -387,20 +387,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:8:0"
+              "src": "124:8:0"
             },
             "scope": 14,
-            "src": "79:78:0",
-            "stateMutability": "nonpayable",
+            "src": "79:83:0",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 15,
-        "src": "59:100:0"
+        "src": "59:105:0"
       }
     ],
-    "src": "26:134:0"
+    "src": "26:139:0"
   },
   "compiler": {
     "name": "solc",
@@ -408,7 +408,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-07-16T02:47:30.400Z",
+  "updatedAt": "2019-07-18T09:41:18.743Z",
   "devdoc": {
     "methods": {}
   },
